@@ -2,24 +2,26 @@ import argparse
 import urllib
 
 from openai import OpenAI
-import ipdb
 
-from weekly_theme.src.config import DATA_DIR, IMAGE_DIR
+from .config import DATA_DIR, IMAGE_DIR
 
 
-def generate_moodboard(theme: str) -> str:
+def main(theme: str) -> str:
     response = _open_ai_request(theme)
+    print("Image received from OpenAI API!")
     img_url = response.data[0].url
     tgt_path = DATA_DIR / IMAGE_DIR / f"{theme}_moodboard.jpg"
     urllib.request.urlretrieve(img_url, tgt_path)
     return tgt_path
 
+
 def _generate_prompt(theme: str) -> str:
-    return f"A mood-board of diverse images for the theme of {theme}."
+    return f"A mood-board of diverse images for the theme: '{theme}'. Please include abstract images as well as figurative ones, including a variety of colors, textures ans subjects, from people to landscapes and architecture."
+
 
 def _open_ai_request(theme):
     client = OpenAI()
-
+    print("Making request to OpenAI API...")
     return client.images.generate(
         model="dall-e-3",
         prompt=_generate_prompt(theme),
@@ -37,5 +39,4 @@ if __name__ == "__main__":
                         default="glitter")
     args = parser.parse_args()
     theme = args.theme
-    with ipdb.launch_ipdb_on_exception():
-        generate_moodboard(args.theme)
+    main(args.theme)

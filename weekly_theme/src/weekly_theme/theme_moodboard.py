@@ -1,5 +1,5 @@
-from draw_theme import draw_theme
-from generate_moodboard import generate_moodboard
+from .draw_theme import main as draw_theme
+from .generate_moodboard import main as generate_moodboard
 
 
 def main():
