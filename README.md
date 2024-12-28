@@ -27,9 +27,10 @@ poetry install [--with dev]
 
 ## TODO
 - [ ] Add a connection to Google Keep to sync your weekly themes with a not you can modify from your phone
+- [ ] Automate the draw so that it happens every Sunday at 12:00.
 - [ ] Add a connection to Google Calendar to add your weekly theme as an event
 - [ ] Add a connection to Spotify to create a playlist based on your weekly theme (?)
 - [ ] Add a connection to Dall-E or any other (free!) AI image generator to create a moodboard based on your weekly theme
-- [ ] Add typing
+- [ ] Add type hinting
 - [ ] Add tests
 - [ ] Add a logging system rather than just print statements
