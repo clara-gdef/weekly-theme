@@ -1,18 +1,19 @@
+import random
+
 import ipdb
-import numpy as np
 
 from config import DATA_DIR, THEME_FILE, PASSED_THEMES_FILE
 
 
-def main():
+def draw_theme():
     _file_checks()
     theme_file_path = DATA_DIR / THEME_FILE
     with open(theme_file_path, "r") as f:
         themes = f.readlines()
-    np.random.shuffle(themes)
-    selected_theme = themes.pop(0)
+    index = random.randint(0, len(themes) - 1)
+    selected_theme = themes.pop(index)
     _update_theme_files(selected_theme, themes)
-    ipdb.set_trace()
+    return selected_theme
 
 
 def _update_theme_files(selected_theme, themes):
@@ -41,4 +42,4 @@ def _file_checks():
 
 if __name__ == "__main__":
     with ipdb.launch_ipdb_on_exception():
-        main()
+        draw_theme()
