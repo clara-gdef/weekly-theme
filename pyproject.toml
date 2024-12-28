@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "weekly_theme"
+version = "0.1.0"
+description = "A simple package the randomly draws a theme from a given list."
+authors = ["Clara Gainon de Forsan de Gabriac <clara@powder.gg>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+numpy = "^2.2.1"
+
+
+[tool.poetry.dev-dependencies]
+ipdb = "^0.13.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
