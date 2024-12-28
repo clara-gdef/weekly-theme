@@ -9,7 +9,7 @@ packages = [
   { include = "weekly_theme", from = "weekly_theme/src" }]
 
 [tool.poetry.scripts]
-weekly-theme = "weekly_theme.src.weekly_theme.theme_moodboard:main"
+weekly-theme = "weekly_theme.theme_moodboard:main"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
