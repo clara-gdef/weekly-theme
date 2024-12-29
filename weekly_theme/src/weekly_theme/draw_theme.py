@@ -11,7 +11,7 @@ def main():
     index = random.randint(0, len(themes) - 1)
     selected_theme = themes.pop(index)
     _update_theme_files(selected_theme, themes)
-    return selected_theme.strip()
+    return selected_theme.strip().lower()
 
 
 def _update_theme_files(selected_theme, themes):

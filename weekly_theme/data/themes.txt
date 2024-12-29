@@ -4,14 +4,11 @@ Comfort
 Glitter
 Stars
 Cyber
-Stripes
-Zebras
 Straight lines
 Curves
 Minimalist
 Flowers
 Vegetal
-Muted / quiet
 Playful
 Bubbles
 Creation
@@ -22,11 +19,9 @@ Bike
 Gold
 Fluo
 Warmth
-Dinosaur
 Bonus
 Random
 Tiles
-Heat
 Snow
 Water
 Fire
@@ -46,5 +41,10 @@ Start
 Rooting
 Connection
 Stone
-Shadow/ dark
 Patouille
+Zebras
+Stripes
+RiskHeat
+Muted, quiet
+Shadow, dark
+Dinosaur

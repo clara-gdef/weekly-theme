@@ -1,4 +1,4 @@
-from config import DATA_DIR, THEME_FILE, PASSED_THEMES_FILE
+from .config import DATA_DIR, THEME_FILE, PASSED_THEMES_FILE
 
 def reset_themes():
     with open(DATA_DIR / THEME_FILE, "r") as f:
