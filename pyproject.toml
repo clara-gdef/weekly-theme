@@ -5,9 +5,15 @@ description = "A simple package the randomly draws a theme from a given list."
 authors = ["Clara Gainon de Forsan de Gabriac <clara@powder.gg>"]
 readme = "README.md"
 
+packages = [
+  { include = "weekly_theme", from = "weekly_theme/src" }]
+
+[tool.poetry.scripts]
+weekly-theme = "weekly_theme.theme_moodboard:main"
+
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-numpy = "^2.2.1"
+openai = "^1.58.1"
 
 
 [tool.poetry.dev-dependencies]
