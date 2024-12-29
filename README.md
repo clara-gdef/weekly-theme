@@ -34,7 +34,7 @@ You can use this package by running the following command:
 ```
 
 ## TODO
-- [ ] Add a connection to Google Keep to sync your weekly themes with a not you can modify from your phone
+- [ ] Add a connection to Google Keep to sync your weekly themes with a note you can modify from your phone
 - [ ] Automate the draw so that it happens every Sunday at 12:00.
 - [ ] Add a connection to Google Calendar to add your weekly theme as an event
 - [ ] Add a connection to Spotify to create a playlist based on your weekly theme (?)
