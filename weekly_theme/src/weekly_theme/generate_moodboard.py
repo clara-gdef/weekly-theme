@@ -16,7 +16,7 @@ def main(theme: str) -> str:
 
 
 def _generate_prompt(theme: str) -> str:
-    return f"A mood-board of diverse images for the theme: '{theme}'. Please include abstract images as well as figurative ones, including a variety of colors, textures ans subjects, from people to landscapes and architecture. Finally, place the word '{theme}' in the center of the image."
+    return f"A mood-board of diverse images for the theme: '{theme}'. Include abstract images as well as figurative ones, including a variety of colors, textures ans subjects, from people to landscapes and architecture. Finally, place the word '{theme.upper()}' in the center of the image."
 
 
 def _open_ai_request(theme):
