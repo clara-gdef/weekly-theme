@@ -10,6 +10,8 @@ packages = [
 
 [tool.poetry.scripts]
 weekly-theme = "weekly_theme.theme_moodboard:main"
+reset-themes = "weekly_theme.reset_themes:reset_themes"
+
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
